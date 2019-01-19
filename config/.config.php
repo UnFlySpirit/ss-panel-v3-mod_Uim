@@ -3,10 +3,10 @@
 //  ss-panel v3 配置
 //
 // !!! 修改此key为随机字符串确保网站安全 !!!
-$System_Config['key'] = '(2)s^21m(&21jn1(H282';
+$System_Config['key'] = '(2)s^8)7m(&Un29Fl1(H282';
 $System_Config['debug'] =  'false';  //  正式环境请确保为false
-$System_Config['appName'] = '';             //站点名称
-$System_Config['baseUrl'] = 'https://url.com';            // 站点地址
+$System_Config['appName'] = 'UnFlySpirit';             //站点名称
+$System_Config['baseUrl'] = 'https://url.UnFlySpirit.com';            // 站点地址
 $System_Config['timeZone'] = 'PRC';        // PRC 天朝时间  UTC 格林时间
 $System_Config['pwdMethod'] = 'sha256';       // 密码加密   可选 md5,sha256
 $System_Config['salt'] = '';               // 密码加密用，从旧版升级请留空
@@ -24,8 +24,8 @@ $System_Config['muKey'] = '';
 $System_Config['mailDriver'] = 'mailgun';   // mailgun or smtp or sendgrid
 
 // 用户签到设置
-$System_Config['checkinMin'] = '1';       // 签到最少流量 单位MB
-$System_Config['checkinMax'] = '50';       // 签到最多流量
+$System_Config['checkinMin'] = '500';       // 签到最少流量 单位MB
+$System_Config['checkinMax'] = '1024';       // 签到最多流量
 
 //
 $System_Config['defaultTraffic'] = '1';      // 用户初始流量 单位GB
@@ -36,9 +36,9 @@ $System_Config['inviteNum'] = '10';
 # database 数据库配置
 $System_Config['db_driver'] = 'mysql';
 $System_Config['db_host'] = 'localhost';
-$System_Config['db_database'] = '';
-$System_Config['db_username'] = 'root';
-$System_Config['db_password'] = '';
+$System_Config['db_database'] = '';//你的数据库的名字
+$System_Config['db_username'] = 'root';//你的数据库用户 通常不建议使用超级用户
+$System_Config['db_password'] = '';//你的数据库密码
 $System_Config['db_charset'] = 'utf8';
 $System_Config['db_collation'] = 'utf8_general_ci';
 $System_Config['db_prefix'] = '';
@@ -55,7 +55,7 @@ $System_Config['mailgun_key'] = '';
 $System_Config['mailgun_domain'] = '';
 $System_Config['mailgun_sender'] = '';
 
-# smtp
+# smtp //邮件服务器设置
 $System_Config['smtp_host'] = '';
 $System_Config['smtp_username'] = '';
 $System_Config['smtp_port'] = '';
@@ -315,7 +315,7 @@ $System_Config['pmw_height']='350px';
 $System_Config['alipay_id']='';
 $System_Config['alipay_key']='';
 
-#alipay,zfbjk.com
+#alipay,zfbjk.com 支付宝缴款设置 默认二维码是 作者的
 $System_Config['zfbjk_pid']='';
 $System_Config['zfbjk_key']='';
 $System_Config['zfbjk_qrcodeurl']='https://www.zhaojin97.cn/wp-content/uploads/2016/01/630c50ab52bc139b2a33af8cc64e47ad2016010111570425541.jpg';
