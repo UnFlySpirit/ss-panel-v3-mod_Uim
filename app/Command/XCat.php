@@ -111,7 +111,7 @@ class XCat
 
     public function initdownload()
     {
-        system('git clone https://github.com/UnFlySpirit/panel-download.git '.BASE_PATH."/public/ssr-download/", $ret);
+        system('git clone https://github.com/UnFlySpirit/panel-download2.git '.BASE_PATH."/public/ssr-download/", $ret);
         echo $ret;
     }
 
